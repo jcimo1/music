@@ -1,7 +1,6 @@
 # Site settings
 title: 2018|20 🎵
-description: >- # this means to ignore newlines until "baseurl:"
-  My top 20 favorite albums from 2018
+description: Jerry's 20 favorite albums from 2018
 baseurl: "/music" # the subpath of your site, e.g. /blog
 url: "https://jcimo1.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
