@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-<div class="jumbotron jumbotron-fluid bg-dark text-white text-center">
+<div class="jumbotron jumbotron-fluid bg-dark border-bottom border-white text-white text-center">
     <div class="container">
         <h1 class="jumbotron-heading">2018 <i class="fas fa-compact-disc"></i> 20</h1>
         <p class="lead text-muted">{{ site.description }}</p>
-        <a href="https://github.com/jcimo1/music" class="btn btn-primary">Find me on GitHub <i class="fab fa-github"></i></a>
+        <a href="https://github.com/jcimo1/music" target="_blank" class="btn border btn-primary">GitHub <i class="fab fa-github"></i></a>
+        <a href="http://cimo.world" target="_blank" class="btn border btn-secondary">🌎 🌍 🌏</a>
     </div>
 </div>
 <div class="container">
     <div class="row">
         {% for album in site.data.albums %}
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card bg-dark text-white mb-3">
+                <div class="card bg-dark border-white text-white mb-3">
                     <a href="#modal{{ album.rank }}" data-toggle="modal" data-target="#modal{{ album.rank }}"><img src="{{ album.artwork }}" class="card-img-top"></a>
                     <div class="card-header">
                         <h4 class="card-title mb-0">{{ album.rank }}. {{ album.title }}</h4>
@@ -41,7 +42,7 @@ layout: default
             <!-- Modal -->
             <div class="modal bg-warning text-white fade" id="modal{{ album.rank }}" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content bg-dark">
+                    <div class="modal-content bg-dark border-white">
                         <div class="modal-header">
                             <h5 class="modal-title">{{ album.title }} | Listen Now</h5>
                             <button type="button" class="close" data-dismiss="modal">
