@@ -1,3 +1,9 @@
-A simple music blog.
+# [music](https://jcimo1.github.io/music/)
+###### A simple music blog/website
+---
+View online at [https://jcimo1.github.io/music/](https://jcimo1.github.io/music/).
 
-Created with [Jekyll](https://jekyllrb.com/) and [Boostrap](https://getbootstrap.com).
+###### Libraries & Frameworks Used:
+- [Jekyll](https://jekyllrb.com/)
+- [Boostrap](https://getbootstrap.com)
+- [Font Awesome](http://fontawesome.io)
