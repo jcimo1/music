@@ -7,3 +7,6 @@ View online at [jcimo1.github.io/music](https://jcimo1.github.io/music/).
 - [Jekyll](https://jekyllrb.com/)
 - [Boostrap](https://getbootstrap.com) w/ [jQuery](https://jquery.com/) & [Popper.js](https://popper.js.org/)
 - [Font Awesome](http://fontawesome.io)
+
+###### Fonts Used:
+- [VT323](https://fonts.google.com/specimen/VT323)
