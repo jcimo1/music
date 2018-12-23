@@ -13,7 +13,7 @@ layout: default
         {% for album in site.data.albums %}
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card bg-dark text-white mb-3">
-                    <img src="{{ album.artwork }}" class="card-img-top">
+                    <a href="#modal{{ album.rank }}" data-toggle="modal" data-target="#modal{{ album.rank }}"><img src="{{ album.artwork }}" class="card-img-top"></a>
                     <div class="card-header">
                         <h4 class="card-title mb-0">{{ album.rank }}. {{ album.title }}</h4>
                     </div>
@@ -33,6 +33,23 @@ layout: default
                                 {% endif %}
                             </div>
                             <small class="text-muted">{{ album.minutes }} mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal bg-warning text-white fade" id="modal{{ album.rank }}" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h5 class="modal-title">{{ album.title }} | Listen Now</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <i class="text-white far fa-times-circle"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="{{ album.embed }}" style="width: 100%; height: 380px;" allowtransparency="true" allow="encrypted-media"></iframe>
                         </div>
                     </div>
                 </div>
